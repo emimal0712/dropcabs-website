@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outstation Routes | Dropcabs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Styles for Routes Page */
+        .routes-section {
+            padding: 120px 5% 60px;
+            min-height: 80vh;
+        }
+
+        .routes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .route-card {
+            padding: 30px;
+            transition: 0.4s ease;
+            text-align: left;
+        }
+
+        .route-card:hover {
+            transform: translateY(-10px);
+            background: rgba(156, 77, 204, 0.15);
+            border-color: var(--primary);
+        }
+
+        .route-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .route-header i {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        .route-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .route-details {
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .route-details div {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .price-tag {
+            color: #25d366;
+            font-weight: bold;
+        }
+
+        .btn-route {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="login-page">
+
+    <a href="https://api.whatsapp.com/send?phone=918124433222" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="navbar glass-nav">
+    <div class="logo">
+        <a href="index.html" class="logo-text">DROP<span class="accent-text">CABS</span></a>
+    </div>
+    
+    <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="outstationroutes.html">Outstation Routes</a></li>
+        <li><a href="tariff.html">Tariff</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="login.html" class="nav-login-btn">Login</a></li>
+    </ul>
+
+    <div class="burger" id="burger-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+    <section class="routes-section">
+    <div class="section-header" style="text-align: center;" data-aos="fade-down">
+        <h2 style="font-size: 2.5rem;">One-Way Outstation Specials</h2>
+        <p style="color: #ccc;">Save more than 50% on drop trips from Chennai</p>
+    </div>
+
+    <div class="routes-grid">
+        <div class="route-card glass" data-aos="zoom-in">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Coimbatore</span>
+                <i class="fas fa-road"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>504 KM</span></div>
+                <div><span>Travel Time:</span> <span>10h 28m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹4,199</span></div>
+            </div>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+
+        <div class="route-card glass" data-aos="zoom-in" data-aos-delay="100">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Madurai</span>
+                <i class="fas fa-gopuram"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>462.3 KM</span></div>
+                <div><span>Travel Time:</span> <span>7h 6m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹7,345</span></div>
+            </div>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+
+        <div class="route-card glass" data-aos="zoom-in" data-aos-delay="200">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Trichy</span>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>331.8 KM</span></div>
+                <div><span>Travel Time:</span> <span>5h 28m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹4,239</span></div>
+            </div>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+
+        <div class="route-card glass" data-aos="zoom-in" data-aos-delay="300">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Pondicherry</span>
+                <i class="fas fa-umbrella-beach"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>165.0 KM</span></div>
+                <div><span>Travel Time:</span> <span>2h 43m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹1,999</span></div>
+            </div>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+
+        <div class="route-card glass" data-aos="zoom-in">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Ooty</span>
+                <i class="fas fa-mountain"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>555.1 KM</span></div>
+                <div><span>Travel Time:</span> <span>10h 6m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹6,459</span></div>
+            </div>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+
+        <div class="route-card glass" data-aos="zoom-in" data-aos-delay="100">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Kodaikanal</span>
+                <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>528.6 KM</span></div>
+                <div><span>Travel Time:</span> <span>9h 30m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹7,896</span></div>
+            </div>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+        <div class="route-card glass" data-aos="zoom-in">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Thanjavur</span>
+                <i class="fas fa-landmark"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>343.3 KM</span></div>
+                <div><span>Travel Time:</span> <span>5h 51m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹3,806</span></div>
+            </div>
+            <p style="font-size: 0.75rem; color: #aaa; margin: 10px 0;">Save >50% on drop trips. Enjoy special discount prices.</p>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+
+        <div class="route-card glass" data-aos="zoom-in" data-aos-delay="100">
+            <div class="route-header">
+                <span class="route-title">Chennai <i class="fas fa-arrow-right"></i> Srirangam</span>
+                <i class="fas fa-place-of-worship"></i>
+            </div>
+            <div class="route-details">
+                <div><span>Distance:</span> <span>323.7 KM</span></div>
+                <div><span>Travel Time:</span> <span>5h 19m</span></div>
+                <div><span>Sedan Starts:</span> <span class="price-tag">₹5,490</span></div>
+            </div>
+            <p style="font-size: 0.75rem; color: #aaa; margin: 10px 0;">Save >50% on drop trips. Enjoy special discount prices.</p>
+            <div><a href="tariff.html" class="btn btn-outline"><i class="fas fa-#tariff"></i> Book Now</a></div>
+        </div>
+    </div>
+</section>
+
+    <footer id="contact">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Dropcabs is a leading service in Chennai providing reliable outstation and local travel across Tamil Nadu, Kerala, and Andhra at the best prices.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> No: 267 GST Road, Chromepet, Chennai - 600044</p>
+                <p><i class="fas fa-phone"></i> +91 81244 33222</p>
+                <p><i class="fas fa-envelope"></i> dropcabs.com@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/17zoDWN2yn/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dropcabs?igsh=MTJ6ZDlzbG4wZGJvZg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/dropcab"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@dropcabs"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dropcabs Private Limited. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+    // Navbar Elements-ai select seigirom
+    const burger = document.querySelector('#burger-icon');
+    const nav = document.querySelector('#nav-menu');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    // Burger icon-ai click seiyum podhu nadakkum matrangal
+    burger.addEventListener('click', () => {
+        
+        // SARIYAANA CODE: Semicolon ippo bracket-ukku veliye ullathu
+        nav.classList.toggle('nav-active');
+
+        // Nav Links mella thondravarkana animation
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                // Links ovvondraaga varuvathatku delay set seigirom
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+
+        // Burger icon 'X' symbol-aaga mara
+        burger.classList.toggle('toggle');
+    });
+</script>
+</body>
+</html>

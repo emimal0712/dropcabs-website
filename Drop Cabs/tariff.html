@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff - Drop Cabs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: radial-gradient(circle at top right, #2c1a4d, #121212);
+            color: white;
+            min-height: 100vh;
+        }
+        /* Page Layout */
+        .tariff-container {
+            padding: 120px 8% 50px;
+        }
+        .tariff-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.8rem;
+            color: #9c4dcc;
+        }
+        .tariff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        /* Glassmorphism Card Style */
+        .tariff-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: 0.4s ease;
+        }
+        .tariff-card:hover {
+            transform: translateY(-10px);
+            border-color: #9c4dcc;
+            box-shadow: 0 10px 30px rgba(156, 77, 204, 0.2);
+        }
+        .tariff-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+        }
+        .price-box {
+            background: rgba(156, 77, 204, 0.2);
+            padding: 12px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border: 1px solid rgba(156, 77, 204, 0.3);
+        }
+        .price-box p { margin: 0; font-weight: 600; font-size: 1rem; color: #e1bee7; }
+        .details { text-align: left; font-size: 0.85rem; color: #ddd; line-height: 2; }
+        .details i { color: #9c4dcc; margin-right: 10px; width: 20px; }
+        .terms-section {
+            margin-top: 60px;
+            padding: 30px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 20px;
+            border-left: 6px solid #9c4dcc;
+        }
+        .terms-section h3 { color: #9c4dcc; margin-bottom: 20px; }
+        .terms-section li { margin-bottom: 10px; color: #ccc; }
+    </style>
+</head>
+<body>
+<a href="https://wa.me/918124433222" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <nav class="navbar glass-nav">
+    <div class="logo">
+        <a href="index.html" class="logo-text">DROP<span class="accent-text">CABS</span></a>
+    </div>
+    
+    <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="outstationroutes.html">Outstation Routes</a></li>
+        <li><a href="tariff.html">Tariff</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="login.html" class="nav-login-btn">Login</a></li>
+    </ul>
+
+    <div class="burger" id="burger-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+    <div class="tariff-container">
+        <h1 class="tariff-title">Vehicle Tariff Rates</h1>
+
+        <div class="tariff-grid">
+            <div class="tariff-card">
+                <img src="images/hatchback.png/1._hatchback-drop-cabs.png" alt="Hatchback">
+                <h3>Hatchpack A/c</h3>
+                <div class="price-box"><p>One Way: ₹15/km | Round: ₹13/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Indica, Ritz, Alto, Swift, Celerio</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 2 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 4</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/sedan.png/2._Sedan_DZIRE-dropcabs.png" alt="Sedan">
+                <h3>Sedan A/c</h3>
+                <div class="price-box"><p>One Way: ₹15/km | Round: ₹13/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Dzire, Xcent, Amaze</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 3 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 4</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/etios.png/etios_drop_cabs.png" alt="Etios">
+                <h3>Etios A/c</h3>
+                <div class="price-box"><p>One Way: ₹16/km | Round: ₹13/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Toyota Etios</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 4 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 4</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/suv.png/4._SUV_XYLO-dropcabs.png" alt="SUV">
+                <h3>SUV A/c</h3>
+                <div class="price-box"><p>One Way: ₹21/km | Round: ₹18/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Xylo, Ertiga, Lodgy, Enjoy</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 4 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 6-7</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/muv.png/innova_drop_cabs.png" alt="MUV">
+                <h3>MUV A/c</h3>
+                <div class="price-box"><p>One Way: ₹21/km | Round: ₹18/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Innova, Marazzo</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 4 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 6-7</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/mpv.png/6.-innova-crysta.png" alt="MPV">
+                <h3>MPV A/c</h3>
+                <div class="price-box"><p>One Way: ₹24/km | Round: ₹22/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Crysta</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 4 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 6</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/11-seater.png/11_seater-rdropcabs.png" alt="11 Seater">
+                <h3>11 Seater A/c</h3>
+                <div class="price-box"><p>One Way: ₹36/km | Round: ₹31/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Sedan(4S) & SUV(7S)</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 7 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 11</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/tempo-non-ac.png/12_seater_drop_cabs.png" alt="Tempo">
+                <h3>Tempo Non A/c</h3>
+                <div class="price-box"><p>One Way: ₹44/km | Round: ₹21/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Force Traveller</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 7 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 12-14</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/12-14-seater-tempo-ac.png/12_seater_drop_cabs.png" alt="Tempo AC">
+                <h3>12-14 Seater Tempo A/c</h3>
+                <div class="price-box"><p>One Way: ₹46/km | Round: ₹23/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Force Tempo Traveller</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 7 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 12-14</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/15-seater-non-ac.png/8._15_seater_mahindra_non_AC.png" alt="15 Seater">
+                <h3>15 Seater Non A/c</h3>
+                <div class="price-box"><p>One Way: ₹46/km | Round: ₹23/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Mahindra Tourister</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 8 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 15</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/18-seater-non-ac.png/9.18-seater-tempo-AC.png" alt="18 Seater">
+                <h3>18 Seater Non A/c</h3>
+                <div class="price-box"><p>One Way: ₹50/km | Round: ₹25/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Force Tempo Traveller</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 9 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 18</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/18-seater-ac.png/9.18-seater-tempo-AC.png" alt="18 Seater AC">
+                <h3>18 Seater A/c</h3>
+                <div class="price-box"><p>One Way: ₹54/km | Round: ₹27/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Force Tempo Traveller</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 9 Units</p>
+                    <p><i class="fas fa-users"></i> Max Passengers: 18</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/21-seater-non-ac.png/10._tata_marcopolo_18seater_non_AC.png" alt="21 Seater">
+                <h3>21 Seater Non A/c</h3>
+                <div class="price-box"><p>One Way: ₹54/km | Round: ₹27/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> Marcopolo, Eicher</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 10 Units</p>
+                    <p><i class="fas fa-users"></i> 21 Seater (Police Case Extra)</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/21-seater-ac.png/11.1-.AC21-seater-eicher.png" alt="21 Seater AC">
+                <h3>21 Seater A/c</h3>
+                <div class="price-box"><p>One Way: ₹60/km | Round: ₹30/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> 407 Coach, Eicher</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 10 Units</p>
+                    <p><i class="fas fa-users"></i> 21 Seater (Police Case Extra)</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/25-seater-non-ac.png/12._25_seater_ac-.png" alt="25 Seater">
+                <h3>25 Seater Non A/c</h3>
+                <div class="price-box"><p>One Way: ₹64/km | Round: ₹32/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> 407 Coach, Eicher</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 11 Units</p>
+                    <p><i class="fas fa-users"></i> 25 Seater (Police Case Extra)</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+            <div class="tariff-card">
+                <img src="images/25-seater-ac.png/13._Non_AC_25_seater-removebg-preview.png" alt="25 Seater AC">
+                <h3>25 Seater A/c</h3>
+                <div class="price-box"><p>One Way: ₹68/km | Round: ₹34/km</p></div>
+                <div class="details">
+                    <p><i class="fas fa-car"></i> 407 Coach, Eicher</p>
+                    <p><i class="fas fa-suitcase"></i> Luggage: 11 Units</p>
+                    <p><i class="fas fa-users"></i> 25 Seater (Police Case Extra)</p>
+                </div>
+                <div><a href="tel:+918124433222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Now</a></div>
+            </div>
+
+        </div>
+
+        <div class="terms-section">
+            <h3>Notes & Conditions:</h3>
+            <ul>
+                <li>Toll fees, Inter-State Permit charges (if any) are extra.</li>
+                <li><strong>Drop Trips:</strong> Driver Bata ₹300 | Waiting Charges ₹100 per hour.</li>
+                <li><strong>Drop Trips:</strong> Minimum running must be 130kms per day.</li>
+                <li><strong>Round Trips:</strong> Driver Bata ₹300/day | Min running 250kms/day (Bengaluru 300kms).</li>
+                <li>Hill station charges: ₹300.</li>
+                <li>1 day means 1 calendar day (Midnight to Midnight).</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Dropcabs is a leading service in Chennai providing reliable outstation and local travel across Tamil Nadu, Kerala, and Andhra at the best prices.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> No: 267 GST Road, Chromepet, Chennai - 600044</p>
+                <p><i class="fas fa-phone"></i> +91 81244 33222</p>
+                <p><i class="fas fa-envelope"></i> dropcabs.com@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/17zoDWN2yn/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dropcabs?igsh=MTJ6ZDlzbG4wZGJvZg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/dropcab"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@dropcabs"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dropcabs Private Limited. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    // Navbar Elements-ai select seigirom
+    const burger = document.querySelector('#burger-icon');
+    const nav = document.querySelector('#nav-menu');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    // Burger icon-ai click seiyum podhu nadakkum matrangal
+    burger.addEventListener('click', () => {
+        
+        // SARIYAANA CODE: Semicolon ippo bracket-ukku veliye ullathu
+        nav.classList.toggle('nav-active');
+
+        // Nav Links mella thondravarkana animation
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                // Links ovvondraaga varuvathatku delay set seigirom
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+
+        // Burger icon 'X' symbol-aaga mara
+        burger.classList.toggle('toggle');
+    });
+</script>
+</body>
+</html>

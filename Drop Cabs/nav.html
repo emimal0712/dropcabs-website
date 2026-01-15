@@ -1,0 +1,10 @@
+<div id="nav-placeholder"></div>
+
+<script>
+    // Nav bar-ai load panna chinna script
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>

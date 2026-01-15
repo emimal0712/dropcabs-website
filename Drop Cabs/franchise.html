@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise Opportunity | Dropcabs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .franchise-hero {
+            padding: 150px 5% 60px;
+            text-align: center;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+
+        .benefit-card {
+            padding: 40px 30px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .benefit-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .franchise-form-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+
+        .franchise-card {
+            width: 100%;
+            max-width: 800px;
+            padding: 50px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .form-row { grid-template-columns: 1fr; }
+        }
+
+        textarea {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: white;
+            outline: none;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="login-page">
+
+    <a href="https://api.whatsapp.com/send?phone=918124433222&text=I%20am%20interested%20in%20Dropcabs%20Franchise" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+   <nav class="navbar glass-nav">
+    <div class="logo">
+        <a href="index.html" class="logo-text">DROP<span class="accent-text">CABS</span></a>
+    </div>
+    
+    <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="outstationroutes.html">Outstation Routes</a></li>
+        <li><a href="tariff.html">Tariff</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="login.html" class="nav-login-btn">Login</a></li>
+    </ul>
+
+    <div class="burger" id="burger-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+
+    <section class="franchise-hero">
+        <div data-aos="fade-down">
+            <h1 style="font-size: 3rem; margin-bottom: 10px;">Partner With Dropcabs</h1>
+            <p style="color: #ccc; max-width: 700px; margin: 0 auto;">Join South India's fastest-growing cab network and build a profitable business with our proven technology and brand support.</p>
+        </div>
+
+        <div class="benefit-grid">
+            <div class="benefit-card glass" data-aos="zoom-in">
+                <i class="fas fa-chart-line"></i>
+                <h3>High ROI</h3>
+                <p>Earn consistent revenue with our high-demand outstation and local routes.</p>
+            </div>
+            <div class="benefit-card glass" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-tools"></i>
+                <h3>Tech Support</h3>
+                <p>Full access to our booking dashboard and driver management software.</p>
+            </div>
+            <div class="benefit-card glass" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Marketing</h3>
+                <p>Benefit from our established brand name and digital marketing campaigns.</p>
+            </div>
+        </div>
+
+        <div class="franchise-form-section" data-aos="fade-up">
+            <div class="franchise-card glass">
+                <h2 style="margin-bottom: 30px;">Franchise Inquiry Form</h2>
+                <form action="#">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <i class="fas fa-user" style="position: absolute; left: 15px; top: 15px; color: var(--primary);"></i>
+                            <input type="text" placeholder="Full Name" style="width:100%; padding:12px 12px 12px 45px; background:rgba(255,255,255,0.05); border:1px solid var(--border); border-radius:10px; color:white;" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-phone" style="position: absolute; left: 15px; top: 15px; color: var(--primary);"></i>
+                            <input type="tel" placeholder="Mobile Number" style="width:100%; padding:12px 12px 12px 45px; background:rgba(255,255,255,0.05); border:1px solid var(--border); border-radius:10px; color:white;" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="City of Interest" style="width:100%; padding:12px; background:rgba(255,255,255,0.05); border:1px solid var(--border); border-radius:10px; color:white;">
+                        <input type="text" placeholder="Current Business (Optional)" style="width:100%; padding:12px; background:rgba(255,255,255,0.05); border:1px solid var(--border); border-radius:10px; color:white;">
+                    </div>
+                    <textarea rows="4" placeholder="Tell us about your interest in Dropcabs..."></textarea>
+                    <button type="submit" class="btn-login" style="max-width: 300px;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>Dropcabs is a leading service in Chennai providing reliable outstation and local travel across Tamil Nadu, Kerala, and Andhra at the best prices.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> No: 267 GST Road, Chromepet, Chennai - 600044</p>
+                <p><i class="fas fa-phone"></i> +91 81244 33222</p>
+                <p><i class="fas fa-envelope"></i> dropcabs.com@gmail.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/17zoDWN2yn/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dropcabs?igsh=MTJ6ZDlzbG4wZGJvZg=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/dropcab"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@dropcabs"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dropcabs Private Limited. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+
+    <script>
+    // Navbar Elements-ai select seigirom
+    const burger = document.querySelector('#burger-icon');
+    const nav = document.querySelector('#nav-menu');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    // Burger icon-ai click seiyum podhu nadakkum matrangal
+    burger.addEventListener('click', () => {
+        
+        // SARIYAANA CODE: Semicolon ippo bracket-ukku veliye ullathu
+        nav.classList.toggle('nav-active');
+
+        // Nav Links mella thondravarkana animation
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                // Links ovvondraaga varuvathatku delay set seigirom
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+
+        // Burger icon 'X' symbol-aaga mara
+        burger.classList.toggle('toggle');
+    });
+</script>
+</body>
+</html>
